@@ -212,7 +212,7 @@ var BeyondStorage = function () {
       if (this._isFunction(callback)) {
         for (var key in storage) {
           if (storage.hasOwnProperty(key)) {
-            callback(key, storage[key]);
+            callback(key, storage[key].data);
           }
         }
       }

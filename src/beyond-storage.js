@@ -113,7 +113,7 @@ class BeyondStorage {
     if (this._isFunction(callback)) {
       for (const key in storage) {
         if (storage.hasOwnProperty(key)) {
-          callback(key, storage[key]);
+          callback(key, storage[key].data);
         }
       }
     }

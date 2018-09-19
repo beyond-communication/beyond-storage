@@ -33,7 +33,7 @@ window.BeyondStorage
 var storage = new BeyondStorage();
 ```
 
-## Example
+## Examples
 
 ```javascript
 import BeyondStorage from 'beyond-storage';
@@ -42,13 +42,31 @@ const storage = new BeyondStorage({
   // See section 'Settings'
 });
 
-// Store a value
-storage.set('key', 'value');
 
-let storedValue = storage.get('key');
+storage.set('foo', 'bar');
 
-console.log(storedValue);
-// "value"
+console.log(storage.get('foo'));
+// "bar"
+
+
+storage.set('test', 'some_value', 10);
+
+console.log(storage.get('test));
+// "some_value"
+
+setTimeout(() => {
+  console.log(storage.get('test));
+  // false
+}, 11000);
+
+
+storage.each((key, value) => {
+  console.log(`${key}: ${value}`);
+});
+// "foo: bar"
+// "test: some_value"
+
+
 ```
 
 ## Settings

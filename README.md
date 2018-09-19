@@ -45,7 +45,7 @@ const storage = new BeyondStorage({
 // Store a value
 storage.set('key', 'value');
 
-let storedValue = storage.get('key);
+let storedValue = storage.get('key');
 
 console.log(storedValue);
 // "value"
@@ -164,6 +164,10 @@ Return byte size of storage.
 
 
 ### Properties
+
+#### `settings`
+
+`Object` All the settings for the instance.
 
 #### `keys`
 

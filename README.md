@@ -51,11 +51,11 @@ console.log(storage.get('foo'));
 
 storage.set('test', 'some_value', 10);
 
-console.log(storage.get('test));
+console.log(storage.get('test'));
 // "some_value"
 
 setTimeout(() => {
-  console.log(storage.get('test));
+  console.log(storage.get('test'));
   // false
 }, 11000);
 

@@ -1,0 +1,39 @@
+{
+  "name": "beyond-storage",
+  "version": "0.1.0",
+  "description": "An easier interface for storing data in localStorage or sessionStorage.",
+  "keywords": [
+    "localStorage",
+    "sessionStorage",
+    "storage",
+    "json",
+    "store"
+  ],
+  "main": "./dist/beyond-store.min.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp clean && gulp script"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyondisak/beyond-storage.git"
+  },
+  "author": "Isak Sandin <isak@onestepbeyond.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beyondisak/beyond-storage/issues"
+  },
+  "homepage": "https://github.com/beyondisak/beyond-storage#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-webpack": "^1.5.0",
+    "run-sequence": "^2.1.0",
+    "webpack": "^3.5.6"
+  }
+}

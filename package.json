@@ -9,7 +9,7 @@
     "json",
     "store"
   ],
-  "main": "./dist/beyond-store.min.js",
+  "main": "./dist/beyond-storage.min.js",
   "scripts": {
     "dev": "gulp",
     "build": "gulp clean && gulp script"
